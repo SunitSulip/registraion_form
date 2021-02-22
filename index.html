@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<style type="text/css">
+		.PersonalDetails {
+			background-color: lightgray;
+			padding: 20px;
+			
+		}
+		.CoursesDetails {
+			background-color: orange;
+			padding: 20px;
+			font-family: sans-serif;
+			
+		}
+
+		body {
+			font-family: fantasy,sans-serif;
+			padding: 30px;
+			outline: dotted;
+			
+
+
+		}
+		div {
+			border: double;
+			/*text-align: center;*/
+		}
+
+	</style>
+	<script type="text/javascript">
+
+		
+	</script>
+</head>
+<body>
+	<h2 style="text-align: center;"><i>Registration Form</i></h2>
+	<form method="post">
+		<div class="PersonalDetails">
+			<fieldset>
+				<legend>Personal_D:</legend>
+			<label>Name:</label>
+			<input type="text" name="name"><br>
+			<label>Phone no.-</label>
+			<input type="number" name="Phone"><br>
+			<label>Passport Picture:-</label>
+			<input type="file" name="Pic"><br>
+			<label>Address</label><br>
+			<textarea></textarea><br>
+			<label value="" >Country:</label>
+			<select name="Country">
+				<option>INDIA</option>
+				<option>USA</option>
+				<option>UK</option>
+			</select>
+			<label>Age:</label>
+			<input type="number" name="age"><br>
+			<label>Gender:</label><br>
+			<input type="radio" name="Gender" value="male">Male<br>
+			<input type="radio" name="Gender" value="female">Female<br>
+			<input type="radio" name="Gender" value="others">Others<br>
+			<label>Present Semester:</label><br>
+			<input type="radio" name="sem" id="8 sem"><label for="8 sem">8<sup>th</sup></label>
+			<input type="radio" name="sem" id="7 sem"><label for="7 sem">7<sup>th</sup></label>
+			<input type="radio" name="sem" id="6 sem"><label for="6 sem">6<sup>th</sup></label>
+			</fieldset>
+		</div>
+		<div class="CoursesDetails">
+			<fieldset>
+				<legend>CoursesD:</legend>
+			<label>Date:</label><br>
+			<label>From</label><input type="date" name="from"><label>To</label><input type="date" name="to"><br>
+			<label>Courses:</label><br>
+			<input type="checkbox" name="Courses" value="OS" id="OS"><label for="OS">Operating System</label> <br>
+			<input type="checkbox" name="Courses" value="Web" id="Web"><label for="Web">Web Technology</label><br>
+			<input type="checkbox" name="Courses" value="App" id="App"><label for="App">Android Development</label><br>
+			</fieldset>
+		</div>
+
+		<button onclick="fuc()"><input type="submit" name="Submit" value="Submit" style="width: 100%; height: 40px; background-color:purple; color: white;"></button>
+
+	</form>
+	
+</body>
+</html>
